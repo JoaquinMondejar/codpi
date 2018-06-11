@@ -11,7 +11,7 @@ import com.pi4j.io.gpio.event.GpioPinListenerDigital;
 public class Pruebas {
 
 	public static void main(String[] args) throws InterruptedException {
-		disco();
+		test();
 	}
 
 	private static void test() throws InterruptedException {
