@@ -27,10 +27,10 @@ public class Pruebas {
 		// Pines conectados a botones.
 		GpioPinDigitalInput boton1 = gpioController.provisionDigitalInputPin(RaspiPin.GPIO_00,
 				PinPullResistance.PULL_DOWN);
-		GpioPinDigitalInput boton2 = gpioController.provisionDigitalInputPin(RaspiPin.GPIO_02,
-				PinPullResistance.PULL_DOWN);
-		GpioPinDigitalInput boton3 = gpioController.provisionDigitalInputPin(RaspiPin.GPIO_03,
-				PinPullResistance.PULL_DOWN);
+//		GpioPinDigitalInput boton2 = gpioController.provisionDigitalInputPin(RaspiPin.GPIO_02,
+//				PinPullResistance.PULL_DOWN);
+//		GpioPinDigitalInput boton3 = gpioController.provisionDigitalInputPin(RaspiPin.GPIO_03,
+//				PinPullResistance.PULL_DOWN);
 
 		// Iniciamos el test.
 		System.out.println("Iniciando el test");
@@ -70,19 +70,19 @@ public class Pruebas {
 			}
 		});
 
-		boton2.addListener(new GpioPinListenerDigital() {
-			@Override
-			public void handleGpioPinDigitalStateChangeEvent(GpioPinDigitalStateChangeEvent event) {
-				System.out.println("Pulsado el boton 2");
-			}
-		});
-
-		boton3.addListener(new GpioPinListenerDigital() {
-			@Override
-			public void handleGpioPinDigitalStateChangeEvent(GpioPinDigitalStateChangeEvent event) {
-				System.out.println("Pulsado el boton 3");
-			}
-		});
+//		boton2.addListener(new GpioPinListenerDigital() {
+//			@Override
+//			public void handleGpioPinDigitalStateChangeEvent(GpioPinDigitalStateChangeEvent event) {
+//				System.out.println("Pulsado el boton 2");
+//			}
+//		});
+//
+//		boton3.addListener(new GpioPinListenerDigital() {
+//			@Override
+//			public void handleGpioPinDigitalStateChangeEvent(GpioPinDigitalStateChangeEvent event) {
+//				System.out.println("Pulsado el boton 3");
+//			}
+//		});
 
 		while (true) {
 			Thread.sleep(500);
